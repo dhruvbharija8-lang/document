@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document Library</title>
+<style>
+  :root{
+    --bg:#f6f4ef;
+    --ink:#1f1d1a;
+    --muted:#6b6760;
+    --line:#dcd8cf;
+    --accent:#a8512e;
+    --card:#ffffff;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Georgia', 'Times New Roman', serif;
+    line-height:1.5;
+  }
+  header{
+    max-width:880px;
+    margin:0 auto;
+    padding:64px 24px 32px;
+    border-bottom:1px solid var(--line);
+  }
+  header h1{
+    font-size:2.1rem;
+    margin:0 0 8px;
+    letter-spacing:-0.01em;
+  }
+  header p{
+    color:var(--muted);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:0.95rem;
+    margin:0;
+  }
+  main{
+    max-width:880px;
+    margin:0 auto;
+    padding:40px 24px 80px;
+  }
+  section{
+    margin-bottom:48px;
+  }
+  section h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:0.8rem;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--accent);
+    margin:0 0 16px;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--line);
+  }
+  ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  li{
+    border-bottom:1px solid var(--line);
+  }
+  li:last-child{
+    border-bottom:none;
+  }
+  a.doc-link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    padding:16px 4px;
+    text-decoration:none;
+    color:var(--ink);
+    font-size:1.05rem;
+    transition:padding-left 0.15s ease, color 0.15s ease;
+  }
+  a.doc-link:hover{
+    padding-left:8px;
+    color:var(--accent);
+  }
+  a.doc-link .arrow{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:0.9rem;
+    color:var(--muted);
+    flex-shrink:0;
+  }
+  a.doc-link:hover .arrow{
+    color:var(--accent);
+  }
+  footer{
+    max-width:880px;
+    margin:0 auto;
+    padding:0 24px 48px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:0.8rem;
+    color:var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Document Library</h1>
+  <p>Sample CVs and Compendium — opens each file in a new tab.</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Sample CVs</h2>
+    <ul>
+      <li><a class="doc-link" href="https://drive.google.com/drive/folders/19fyAZ-QxtS1frjw-tCR8ZFNO8B8kePHf" target="_blank" rel="noopener">Domain wise <span class="arrow">Open ↗</span></a></li>
+      <li><a class="doc-link" href="https://drive.google.com/drive/folders/1ll1EJMvqwG4O_1vD5aY4GKw_ow68iLV4" target="_blank" rel="noopener">Background wise <span class="arrow">Open ↗</span></a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Compendium</h2>
+    <ul>
+      <li><a class="doc-link" href="https://drive.google.com/drive/folders/1Ir9BWGjYgYsLJwneq9WoTI6dbDezXS_H" target="_blank" rel="noopener">Domain Repositries <span class="arrow">Open ↗</span></a></li>
+    </ul>
+  </section>
+
+</main>
+
+
+
+</body>
+</html>

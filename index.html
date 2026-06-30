@@ -91,6 +91,33 @@
   a.doc-link:hover .arrow{
     color:var(--accent);
   }
+  .social{
+    display:flex;
+    gap:14px;
+    margin-top:18px;
+  }
+  .social a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:1px solid var(--line);
+    background:var(--card);
+    color:var(--ink);
+    transition:background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+  .social a:hover{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+  .social svg{
+    width:18px;
+    height:18px;
+    fill:currentColor;
+  }
   footer{
     max-width:880px;
     margin:0 auto;
@@ -106,6 +133,17 @@
 <header>
   <h1>Document Library</h1>
   <p>Sample CVs and Compendium — opens each file in a new tab.</p>
+  <div class="social">
+    <a href="https://www.instagram.com/mba_partner?igsh=dGZuMmoyb3V2eDlx-" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.07 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.25.07-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.24-1.97.4-2.43A4.9 4.9 0 0 1 3.82 2.95 4.9 4.9 0 0 1 5.59 1.8c.46-.16 1.26-.35 2.43-.4C9.27 1.33 9.67 1.33 12 1.33Zm0 1.8c-3.15 0-3.52 0-4.76.07-1.04.04-1.6.21-1.97.35-.5.19-.85.42-1.22.79-.37.37-.6.72-.79 1.22-.14.37-.31.93-.35 1.97-.07 1.24-.07 1.61-.07 4.76s0 3.52.07 4.76c.04 1.04.21 1.6.35 1.97.19.5.42.85.79 1.22.37.37.72.6 1.22.79.37.14.93.31 1.97.35 1.24.07 1.61.07 4.76.07s3.52 0 4.76-.07c1.04-.04 1.6-.21 1.97-.35.5-.19.85-.42 1.22-.79.37-.37.6-.72.79-1.22.14-.37.31-.93.35-1.97.07-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.04-1.04-.21-1.6-.35-1.97a3.1 3.1 0 0 0-.79-1.22 3.1 3.1 0 0 0-1.22-.79c-.37-.14-.93-.31-1.97-.35-1.24-.07-1.61-.07-4.76-.07Zm0 4.07a4.93 4.93 0 1 1 0 9.86 4.93 4.93 0 0 1 0-9.86Zm0 1.8a3.13 3.13 0 1 0 0 6.26 3.13 3.13 0 0 0 0-6.26Zm5.13-1.99a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/></svg>
+    </a>
+    <a href="https://youtube.com/@mbapartner?si=0TXLOPjxtMiHvJU7" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24"><path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 4 12 4 12 4s-7.5 0-9.4.4A3 3 0 0 0 .5 6.5 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.5 3 3 0 0 0 2.1 2.1C4.5 20 12 20 12 20s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.5ZM9.6 15.5v-7l6.3 3.5-6.3 3.5Z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/prodmarkconsulting" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+    </a>
+  </div>
 </header>
 
 <main>
@@ -113,21 +151,25 @@
   <section>
     <h2>Sample CVs</h2>
     <ul>
-      <li><a class="doc-link" href="https://drive.google.com/drive/folders/19fyAZ-QxtS1frjw-tCR8ZFNO8B8kePHf" target="_blank" rel="noopener">Domain wise <span class="arrow">Open ↗</span></a></li>
-      <li><a class="doc-link" href="https://drive.google.com/drive/folders/1ll1EJMvqwG4O_1vD5aY4GKw_ow68iLV4" target="_blank" rel="noopener">Background wise <span class="arrow">Open ↗</span></a></li>
+      <li><a class="doc-link" href="REPLACE_WITH_DRIVE_LINK_1" target="_blank" rel="noopener">CV Title 1 <span class="arrow">Open ↗</span></a></li>
+      <li><a class="doc-link" href="REPLACE_WITH_DRIVE_LINK_2" target="_blank" rel="noopener">CV Title 2 <span class="arrow">Open ↗</span></a></li>
+      <li><a class="doc-link" href="REPLACE_WITH_DRIVE_LINK_3" target="_blank" rel="noopener">CV Title 3 <span class="arrow">Open ↗</span></a></li>
     </ul>
   </section>
 
   <section>
     <h2>Compendium</h2>
     <ul>
-      <li><a class="doc-link" href="https://drive.google.com/drive/folders/1Ir9BWGjYgYsLJwneq9WoTI6dbDezXS_H" target="_blank" rel="noopener">Domain Repositries <span class="arrow">Open ↗</span></a></li>
+      <li><a class="doc-link" href="REPLACE_WITH_DRIVE_LINK_4" target="_blank" rel="noopener">Compendium Title 1 <span class="arrow">Open ↗</span></a></li>
+      <li><a class="doc-link" href="REPLACE_WITH_DRIVE_LINK_5" target="_blank" rel="noopener">Compendium Title 2 <span class="arrow">Open ↗</span></a></li>
     </ul>
   </section>
 
 </main>
 
-
+<footer>
+  Updated manually — add or remove rows in the HTML to update this list.
+</footer>
 
 </body>
 </html>
